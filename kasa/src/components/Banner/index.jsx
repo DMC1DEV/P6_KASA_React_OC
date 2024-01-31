@@ -1,37 +1,16 @@
-import styled from 'styled-components'
-import colors from '../../utils/style/colors'
+import ImageBannerHomepage from "../../assets/image_banner_homepage.jpeg";
 
-const ErrorWrapper = styled.div`
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-  background-color: ${colors.background};
-  align-items: center;
-`
-
-const ErrorTitle = styled.h1`
-  font-weight: 300;
-`
-
-const ErrorSubtitle = styled.h2`
-  font-weight: 300;
-  color: ${colors.secondary};
-`
-
-const Illustration = styled.img`
-  max-width: 800px;
-`
-
-function Error() {
+function Banner() {
   return (
-    <ErrorWrapper>
-      <ErrorTitle>Oups...</ErrorTitle>
-      <Illustration src="https://github.com/atoulmet/assets/blob/master/404.svg?raw=true" />
-      <ErrorSubtitle>
-        Il semblerait que la page que vous cherchez n’existe pas
-      </ErrorSubtitle>
-    </ErrorWrapper>
-  )
+    <div>
+      <h1>Chez vous, partout et ailleurs</h1>
+      <img
+        src={ImageBannerHomepage}
+        alt="Plage rocailleuse sous un ciel gris."
+        style={{ maxWidth: "100%", height: "300px" }}
+      />
+    </div>
+  );
 }
 
-export default Error
+export default Banner;
