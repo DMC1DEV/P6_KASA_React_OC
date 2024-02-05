@@ -25,13 +25,13 @@
         border-radius: 25px; 
         z-index: 0;
     }
-}
 
-.banner_text {
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 68px;
-    padding: 2px;
-    position: relative;
-    z-index: 1; 
+    &_text {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 68px;
+        padding: 2px;
+        position: relative;
+        z-index: 1; 
+    }
 }
