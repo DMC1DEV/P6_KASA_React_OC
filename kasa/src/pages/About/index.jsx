@@ -1,21 +1,20 @@
+import React from 'react';
+import Banner from '../../components/Banner'; 
 import ImageBannerAbout from "../../assets/image_banner_about.jpeg";
+import '../../styles/about.scss';
 
 function About() {
   return (
-    <div>
-            <img
-        src={ImageBannerAbout}
-        alt="Plage rocailleuse sous un ciel gris."
-        style={{ maxWidth: "100%", height: "300px" }}
-      />
+    <div className="about-page">
+      <Banner image={ImageBannerAbout} />
       <div>
-      <ul>
+        <ul>
           <li><strong>Fiabilité</strong></li>
           <li><strong>Respect</strong></li>
           <li><strong>Service</strong></li>
           <li><strong>Sécurité</strong></li>
-      </ul>
-    </div>
+        </ul>
+      </div>
     </div>
   );
 }

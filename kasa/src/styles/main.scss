@@ -6,3 +6,31 @@ body {
   font-family: $font-family-montserrat;
   margin-top: 50px;
 }
+
+//Grille appartements//
+
+//desktop
+.apartments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  justify-content: center; 
+  align-content: start; 
+  background-color: #F6F6F6;
+  padding: 30px;
+  border-radius: 25px;
+  margin: 50px auto;
+  max-width: calc(100% - 200px);
+  margin-left: 100px;
+  margin-right: 100px;
+
+  //tablettes
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  //mobiles
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr; 
+  }
+}

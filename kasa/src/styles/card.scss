@@ -1,0 +1,19 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    background-color: #FF6060;
+
+    h2 {
+    margin: 15px;
+    margin-top: 70%;
+    }
+}
+
+.card-title {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}

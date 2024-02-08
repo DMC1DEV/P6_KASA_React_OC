@@ -1,11 +1,9 @@
-import React from 'react';
-import ImageBannerHomepage from "../../assets/image_banner_homepage.jpeg";
 import '../../styles/banner.scss'; 
 
-function Banner() {
+function Banner({ image, children }) {
   return (
-    <div className="banner_container" style={{ backgroundImage: `url(${ImageBannerHomepage})` }}>
-      <h1 className="banner_text">Chez vous, partout et ailleurs</h1>
+    <div className="banner_container" style={{ backgroundImage: `url(${image})` }}>
+      <h1 className="banner_text">{children}</h1>
     </div>
   );
 }

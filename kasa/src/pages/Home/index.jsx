@@ -1,16 +1,22 @@
-import { Link } from "react-router-dom";
+import React from 'react';
 import Banner from '../../components/Banner';
+import Card from '../../components/Card';
 import apartmentsData from '../../data/json P6.json';
+import '../../styles/main.scss';
+import ImageBannerHomepage from "../../assets/image_banner_homepage.jpeg";
 
 function Home() {
   return (
     <div>
-      <Banner />
-      <h2>Liste des appartements</h2>
-      <Link to="/ficheLogement">Appart</Link>
-      {apartmentsData.map((apartment) => (
-        <p key={apartment.id}>{apartment.title}</p>
-      ))}
+      <Banner image={ImageBannerHomepage}>
+        Chez vous, partout et ailleurs
+      </Banner>
+
+      <div className="apartments-grid">
+        {apartmentsData.map((apartment) => (
+          <Card key={apartment.id} id={apartment.id} title={apartment.title} />
+        ))}
+      </div>
     </div>
   );
 }
