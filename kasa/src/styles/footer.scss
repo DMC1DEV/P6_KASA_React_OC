@@ -4,26 +4,31 @@
     justify-content: center;
     background-color: black;
     color: white;
-    height: 200px;
     flex-direction: column;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
-    bottom: 0;
+    position: relative;
     width: 100%;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+}
 
-    &_logo {
-        height: 20px;
-        padding: 20px;
+.footer.open {
+    transform: translateY(100%);
+}
 
-        img {
-            width: 122px;
-        }
+.footer_logo {
+    height: 20px;
+    padding: 20px;
+
+    img {
+        width: 122px;
     }
+}
 
-    &_informations_trademarks {
-        height: 20px;
-        margin: 20px;
-        font-size: 24px;
-    }
+.footer_informations_trademarks {
+    height: 20px;
+    margin: 20px;
+    font-size: 24px;
 }
