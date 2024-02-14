@@ -4,33 +4,47 @@ body {
   margin: 0;
   padding: 0;
   font-family: $font-family-montserrat;
-  margin-top: 50px;
 }
 
-//Grille appartements//
-
-//desktop
 .apartments-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px;
-  justify-content: center; 
-  align-content: start; 
-  background-color: #F6F6F6;
-  padding: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+  background-color: #F6F6F6; 
+  padding: 40px;
   border-radius: 25px;
   margin: 50px auto;
-  max-width: calc(100% - 200px);
   margin-left: 100px;
   margin-right: 100px;
+}
 
-  //tablettes
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr); 
-  }
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
 
-  //mobiles
-  @media (max-width: 480px) {
-    grid-template-columns: 1fr; 
-  }
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #FF6060 0%, #FF6060 40%, #8a3030e4 100%); 
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+  height: 300px;
+  width: 100%;
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+.card-title {
+  text-decoration: none;
+  color: white; 
+  font-size: 14px;
+  text-align: left;
+  width: 60%;
 }

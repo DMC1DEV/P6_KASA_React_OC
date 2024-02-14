@@ -3,12 +3,13 @@ import '../../styles/card.scss';
 
 function Card({ id, title }) {
   return (
-    <Link to={`/ficheLogement/${id}`} className="card-title">
-      <div className="card">
-        <h2>{title}</h2>
-      </div>
-    </Link>
+    <div className="card-container">
+      <Link to={`/ficheLogement/${id}`} className="card">
+        <h2 className="card-title">{title}</h2>
+      </Link>
+    </div>
   );
 }
+
 
 export default Card;
