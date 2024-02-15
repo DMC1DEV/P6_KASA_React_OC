@@ -1,0 +1,70 @@
+.title {
+    color: #FF6060;
+    font-size: 2rem; 
+}
+
+.location {
+    color: #2C3E50;
+    font-size: 1.25rem; 
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #FF6060;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem; 
+}
+
+.description {
+    color: #2C3E50;
+    font-size: 1rem; 
+}
+
+.equipments {
+    color: #2C3E50;
+    font-size: 1rem; 
+}
+
+.rating {
+    color: #2C3E50;
+    font-size: 1rem; 
+}
+
+.host-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.host-name {
+    color: #2C3E50;
+    font-size: 1.25rem; 
+}
+
+.host-picture {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+}
+
+.content-container {
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.description-equipments-container  {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
