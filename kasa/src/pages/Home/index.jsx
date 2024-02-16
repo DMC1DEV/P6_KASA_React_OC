@@ -14,7 +14,12 @@ function Home() {
 
       <div className="apartments-grid">
         {apartmentsData.map((apartment) => (
-          <Card key={apartment.id} id={apartment.id} title={apartment.title} />
+          <Card
+            key={apartment.id}
+            id={apartment.id}
+            title={apartment.title}
+            image={apartment.cover} 
+          />
         ))}
       </div>
     </div>

@@ -6,30 +6,33 @@
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100%;
   cursor: pointer;
+}
 
-  .icon {
-    width: 20px;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
+.icon {
+  width: 20px;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
 
-  .icon.open {
-    transform: rotate(180deg);
-  }
+.icon.open {
+  transform: rotate(180deg); 
 }
 
 .content {
   max-height: 0;
   overflow: hidden;
   color: #FF6060;
-}
 
-.content.show {
-  max-height: 1000px;
-  animation: slideDown 1s ease-in-out; 
+  &.show {
+    max-height: 1000px;
+    animation: slideDown 1s ease-in-out;
+    p {
+      padding: 10px;
+    }
+  }
 }
 
 @keyframes slideDown {
@@ -50,7 +53,7 @@
   width: 100%; 
   margin: 0 auto; 
   background-color: #F6F6F6; 
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .collapse-container {

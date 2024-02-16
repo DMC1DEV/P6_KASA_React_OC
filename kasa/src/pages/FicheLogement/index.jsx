@@ -1,16 +1,16 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import apartmentsData from '../../data/json P6.json'; // Assurez-vous que le chemin est correct
-import Carousel from '../../components/Carousel'; // Assurez-vous que le chemin est correct
-import Collapse from '../../components/Collapse'; // Assurez-vous que le chemin est correct
-import '../../styles/fichelogement.scss'; // Assurez-vous que le chemin est correct
+import { useParams, Navigate } from 'react-router-dom';
+import apartmentsData from '../../data/json P6.json'; 
+import Carousel from '../../components/Carousel'; 
+import Collapse from '../../components/Collapse'; 
+import '../../styles/fichelogement.scss'; 
 
 function FicheLogementPage() {
   const { id } = useParams();
   const apartment = apartmentsData.find(apartment => apartment.id === id);
 
   if (!apartment) {
-    return <div>Appartement introuvable</div>;
+    return <Navigate to="/404" replace />;
   }
 
   const { title, location, tags, description, equipments, rating, host, pictures } = apartment;
@@ -20,12 +20,23 @@ function FicheLogementPage() {
     <div className="fiche-logement">
       <Carousel pictures={pictures} />
       <div className="content-container">
-        <h1 className="title">{title}</h1>
-        <p className="location">{location}</p>
-        <div className="tags">
-          {tags.map(tag => (
-            <span key={tag} className="tag">{tag}</span>
-          ))}
+        <div className="info-container">
+          <div className="title-location-tags">
+            <h1 className="title">{title}</h1>
+            <p className="location">{location}</p>
+            <div className="tags">
+              {tags.map(tag => (
+                <span key={tag} className="tag">{tag}</span>
+              ))}
+            </div>
+          </div>
+          <div className="host-rating">
+            <div className="host-info">
+              <img src={host.picture} alt="Host" className="host-picture" />
+              <p className="host-name">{host.name}</p>
+            </div>
+            <div className="rating">{starRating}</div>
+          </div>
         </div>
         <div className="description-equipments-container">
           <Collapse title="Description">
@@ -38,11 +49,6 @@ function FicheLogementPage() {
               ))}
             </div>
           </Collapse>
-        </div>
-        <div className="rating">{starRating}</div>
-        <div className="host-info">
-          <img src={host.picture} alt="Host" className="host-picture" />
-          <p className="host-name">{host.name}</p>
         </div>
       </div>
     </div>
