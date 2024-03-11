@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import Collapse from '../../components/Collapse';
+import '../../styles/aboutpage.scss'; 
 import ImageBannerAbout from "../../assets/image_banner_about.jpeg";
 
 function About() {

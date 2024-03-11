@@ -5,14 +5,13 @@
     position: relative;
     text-align: center;
     overflow: hidden;
-    height: 220px;
-    background: url('../assets/image_banner_homepage.jpeg') no-repeat center center; 
+    height: 170px;
+    background: url('../assets/image_banner_homepage.jpeg') no-repeat center center;
     background-size: cover;
     color: #fff;
-    border-radius: 25px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     z-index: 1;
 
     &:after {
@@ -22,17 +21,47 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.3); 
-        border-radius: 25px; 
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
         z-index: -1;
     }
 
-    &_text {
-        font-size: 48px;
-        font-weight: 500;
+    .banner_text {
+        font-size: 30px;
+        font-weight: 550;
+        letter-spacing:0.3mm;
         line-height: 68px;
         padding: 2px;
         position: relative;
-        z-index: 2; 
+        z-index: 2;
+    }
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 767px) {
+    .banner_container {
+        margin-left: 50px; /* Reduced margin */
+        margin-right: 50px; /* Reduced margin */
+    }
+
+    .banner_container_text {
+        font-size: 36px; /* Reduced font size */
+        line-height: 48px; /* Adjusted line height */
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 320px) {
+    .banner_container {
+        height: 180px; /* Reduced height for mobile devices */
+        margin-left: 20px; /* Minimal side margins for mobile */
+        margin-right: 20px; /* Minimal side margins for mobile */
+        border-radius: 15px; /* Smaller border radius for mobile */
+    }
+
+    .banner_container_text {
+        font-size: 24px; /* Smaller font size for mobile */
+        line-height: 32px; /* Adjusted line height for mobile */
+        padding: 1px; /* Reduced padding for mobile */
     }
 }

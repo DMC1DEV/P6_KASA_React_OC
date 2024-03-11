@@ -1,23 +1,42 @@
 @import '_variables';
 
-body {
+body, html {
   margin: 0;
   padding: 0;
   font-family: $font-family-montserrat;
+  min-height: 100vh; 
+  width: 100%;
 }
+
+/* Styles par défaut */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-height: 100vh;
+}
+
+#root .footer {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: absolute;
+}
+
+/* Grid appartements */
 
 .apartments-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); 
   gap: 40px;
   justify-content: center;
   align-items: start;
   background-color: #F6F6F6; 
   padding: 40px;
   border-radius: 25px;
-  margin: 50px auto;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .card-container {
@@ -36,7 +55,7 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
   padding: 20px;
-  height: 300px;
+  height: 200px;
   width: 100%;
   max-width: 300px; 
   margin: 0 auto; 
@@ -47,6 +66,3 @@ body {
 }
 
 
-.card-container a {
-  text-decoration: none;
-}

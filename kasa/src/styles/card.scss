@@ -1,23 +1,52 @@
 .card {
     border-radius: 8px;
     overflow: hidden;
-    width: 250px;
+    width: 250px; 
     height: 250px;
     background-color: #FF6060;
-
+  
     h2 {
-    margin-top: 80%;
-    text-decoration: none;
+      margin-top: 80%;
+      text-decoration: none;
     }
-}
+  
+    // Media query for tablets
+    @media screen and (max-width: 1024px) {
 
-.card-title {
+      height: 200px; 
+      h2 {
+        margin-top: 70%; 
+      }
+    }
+  
+    // Media query for mobile devices
+    @media screen and (max-width: 767px) {
+      // Adjustments for mobile devices
+      // Width remains the same unless you decide to change it here
+      height: 150px; // Optionally, adjust the height for mobiles
+      h2 {
+        margin-top: 60%; // Adjust top margin for smaller card
+      }
+    }
+  }
+  
+  .card-title {
     text-decoration: none;
     color: white;
     font-size: 14px;
-    width: 10px;
     text-align: left;
-    width: 60%;
-}
-
-
+    width: 60%; // This width will apply unless overridden by a media query
+  
+    // Media query for tablets
+    @media screen and (max-width: 1024px) {
+      // Adjustments for tablet devices
+      font-size: 12px; // Smaller font size for tablets
+    }
+  
+    // Media query for mobile devices
+    @media screen and (max-width: 767px) {
+      // Adjustments for mobile devices
+      font-size: 10px; // Smaller font size for mobiles
+    }
+  }
+  

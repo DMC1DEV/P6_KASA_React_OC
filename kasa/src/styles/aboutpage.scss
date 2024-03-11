@@ -1,0 +1,9 @@
+.about-page {
+    width: 100%;
+}
+
+.about-page .banner_container {
+    &:after {
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
