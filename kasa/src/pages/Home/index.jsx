@@ -7,7 +7,7 @@ import ImageBannerHomepage from "../../assets/image_banner_homepage.jpeg";
 
 function Home() {
   return (
-    <div>
+    <div className="all-content">
       <Banner image={ImageBannerHomepage}>
         Chez vous, partout et ailleurs
       </Banner>

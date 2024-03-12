@@ -39,29 +39,24 @@
 
 /* Media query for tablets */
 @media screen and (max-width: 767px) {
-    .banner_container {
-        margin-left: 50px; /* Reduced margin */
-        margin-right: 50px; /* Reduced margin */
-    }
-
-    .banner_container_text {
-        font-size: 36px; /* Reduced font size */
-        line-height: 48px; /* Adjusted line height */
+    .banner_container .banner_text {
+        font-size: 25px; 
+        line-height: 48px; 
     }
 }
 
 /* Media query for mobile devices */
 @media screen and (max-width: 320px) {
     .banner_container {
-        height: 180px; /* Reduced height for mobile devices */
-        margin-left: 20px; /* Minimal side margins for mobile */
-        margin-right: 20px; /* Minimal side margins for mobile */
-        border-radius: 15px; /* Smaller border radius for mobile */
+        height: 180px; 
+        margin-left: 20px; 
+        margin-right: 20px; 
+        border-radius: 15px; 
     }
 
-    .banner_container_text {
-        font-size: 24px; /* Smaller font size for mobile */
-        line-height: 32px; /* Adjusted line height for mobile */
-        padding: 1px; /* Reduced padding for mobile */
+    .banner_container .banner_text {
+        font-size: 20px; 
+        line-height: 32px; 
+        padding: 1px; 
     }
 }

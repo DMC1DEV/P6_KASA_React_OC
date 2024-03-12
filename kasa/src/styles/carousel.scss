@@ -34,4 +34,26 @@
   border-radius: 25px;
   overflow: hidden;
   object-fit: cover;
+  object-position: center;
+}
+
+/* Pour les écrans plus larges */
+@media (min-width: 1024px) {
+  .carousel-image {
+    height: 400px; 
+  }
+}
+
+/* Pour les écrans de taille moyenne */
+@media (max-width: 1023px) {
+  .carousel-image {
+    height: 300px; 
+  }
+}
+
+/* Pour les écrans plus petits */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 200px; 
+  }
 }
