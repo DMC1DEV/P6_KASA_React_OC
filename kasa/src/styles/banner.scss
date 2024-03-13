@@ -29,34 +29,32 @@
     .banner_text {
         font-size: 30px;
         font-weight: 550;
-        letter-spacing:0.3mm;
+        letter-spacing: 0.3mm;
         line-height: 68px;
         padding: 2px;
         position: relative;
         z-index: 2;
     }
-}
 
-/* Media query for tablets */
-@media screen and (max-width: 767px) {
-    .banner_container .banner_text {
-        font-size: 25px; 
-        line-height: 48px; 
-    }
-}
-
-/* Media query for mobile devices */
-@media screen and (max-width: 320px) {
-    .banner_container {
-        height: 180px; 
-        margin-left: 20px; 
-        margin-right: 20px; 
-        border-radius: 15px; 
+    // Media query for tablets
+    @media screen and (max-width: 767px) {
+        .banner_text {
+            font-size: 25px;
+            line-height: 48px;
+        }
     }
 
-    .banner_container .banner_text {
-        font-size: 20px; 
-        line-height: 32px; 
-        padding: 1px; 
+    // Media query for mobile devices
+    @media screen and (max-width: 320px) {
+        height: 180px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 15px;
+
+        .banner_text {
+            font-size: 20px;
+            line-height: 32px;
+            padding: 1px;
+        }
     }
 }

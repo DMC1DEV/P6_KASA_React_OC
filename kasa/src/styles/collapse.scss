@@ -29,22 +29,32 @@
   border-radius: 10px;
   width: 100%;
   margin: 0 auto;
-  transition: max-height 0.5s ease-out; 
+  transition: max-height 0.5s ease-out;
 
   &.show {
-    max-height: 1000px; 
-    transition: max-height 1s ease-in; 
+    max-height: 1000px;
+    transition: max-height 1s ease-in;
   }
 }
 
 @keyframes slideDown {
-  from { max-height: 0; }
-  to { max-height: 1000px; }
+  from {
+    max-height: 0;
+  }
+
+  to {
+    max-height: 1000px;
+  }
 }
 
 @keyframes slideUp {
-  from { max-height: 1000px; }
-  to { max-height: 0; }
+  from {
+    max-height: 1000px;
+  }
+
+  to {
+    max-height: 0;
+  }
 }
 
 .collapse-container {

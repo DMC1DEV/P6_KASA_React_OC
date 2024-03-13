@@ -2,113 +2,113 @@
     margin-left: 50px;
     margin-right: 50px;
     flex: 1;
+
+    .title {
+        color: #FF6060;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .location {
+        color: #000000;
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    .tags {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        .tag {
+            background-color: #FF6060;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            height: 10px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .description,
+    .equipments {
+        color: #FF6060;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .equipment {
+        margin: 3px;
+    }
+
+    .rating {
+        color: #FF6060;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .host-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-direction: row-reverse;
+
+        .host-name {
+            color: #FF6060;
+            font-size: 1.25rem;
+        }
+
+        .host-picture {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .host-rating {
+            color: #FF6060;
+        }
+    }
+
+    .content-container {
+        margin-top: 40px;
+    }
+
+    .description-equipments-container {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+
+        // Responsive design pour tablettes et mobiles
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: space-between;
+
+        // Responsive design pour tablettes et mobiles
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
 }
 
-.title {
-    color: #FF6060;
-    font-size: 2rem; 
-    font-weight: 500;
-    margin: 0;
-}
-
-.location {
-    color: #000000;
-    font-size: 1.25rem; 
-    margin: 0;
-}
-
-.tags {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.tag {
-    background-color: #FF6060;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 10px;
-    font-size: 0.7rem; 
-    height: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.description {
-    color: #FF6060;
-    font-size: 1rem; 
-    padding: 10px;
-}
-
-.equipments {
-    color: #FF6060;
-    font-size: 1rem; 
-    padding: 10px;
-}
-
-.equipment {
-    margin: 3px;
-}
-
-.rating {
-    color: #FF6060;
-    font-size: 1rem; 
-    margin-bottom: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.host-info {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    margin-bottom: 20px;
-    flex-direction: row-reverse;
-}
-
-.host-name {
-    color: #FF6060;
-    font-size: 1.25rem; 
-}
-
-.host-picture {
-    width: 50px; 
-    height: 50px;
-    border-radius: 50%;
-}
-
-.host-rating {
-    color: #FF6060;
-}
-
-.content-container {
-    margin-top: 40px;
-}
-
-.description-equipments-container {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
-
-.info-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.title-location-tags {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Responsive design pour tablettes et mobiles */
-@media (max-width: 768px) { 
-
+// Responsive design pour tablettes et mobiles
+@media (max-width: 768px) {
     .fiche-logement {
         margin-left: 20px;
         margin-right: 20px;
@@ -119,23 +119,10 @@
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-
-    .description-equipments-container {
-        flex-direction: column;
-        gap: 10px; 
-    }
-
-    .description-equipments-container {
-        gap: 10px; 
-    }
-
-    .info-container {
-        flex-direction: column;
-    }
 }
 
-@media (max-width: 480px) { 
-
+// Responsive design pour téléphones mobiles
+@media (max-width: 480px) {
     .fiche-logement {
         margin-left: 10px;
         margin-right: 10px;
@@ -147,6 +134,6 @@
 
     .description-equipments-container,
     .info-container {
-        gap: 10px; 
+        gap: 10px;
     }
 }

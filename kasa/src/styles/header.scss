@@ -5,13 +5,14 @@
     color: #FF6060;
     box-sizing: border-box;
     margin-top: 25px;
-    
+
     img {
         width: 150px;
     }
 
     &_links {
         display: flex;
+
         a {
             padding-left: 50px;
             font-size: 20px;
@@ -24,37 +25,35 @@
             }
         }
     }
-}
 
-/* Tablette */
-@media screen and (max-width: 768px) {
+    // Tablette
+    @media screen and (max-width: 768px) {
+        img {
+            width: 120px;
+        }
 
-    .header img {
-        width: 120px; 
-    }
-
-    .header_links {
-        a {
-            padding-left: 10px; 
-            font-size: 13px; 
+        &_links {
+            a {
+                padding-left: 10px;
+                font-size: 13px;
+            }
         }
     }
-}
 
-/* Mobile */
-@media screen and (max-width: 320px) {
+    // Mobile
+    @media screen and (max-width: 320px) {
+        &_links {
+            align-items: center;
+            gap: 10px;
+        }
 
-    .header_links {
-        align-items: center; 
-        gap: 10px;
-    }
+        img {
+            margin-bottom: 10px;
+        }
 
-    .header img {
-        margin-bottom: 10px; 
-    }
-
-    .header_links a {
-        padding: 5px 0; 
-        font-size: 13px; 
+        &_links a {
+            padding: 5px 0;
+            font-size: 13px;
+        }
     }
 }
