@@ -1,3 +1,9 @@
+.fiche-logement {
+    margin-left: 50px;
+    margin-right: 50px;
+    flex: 1;
+}
+
 .title {
     color: #FF6060;
     font-size: 2rem; 
@@ -6,7 +12,7 @@
 }
 
 .location {
-    color: #FF6060;
+    color: #000000;
     font-size: 1.25rem; 
     margin: 0;
 }
@@ -103,13 +109,17 @@
 /* Responsive design pour tablettes et mobiles */
 @media (max-width: 768px) { 
 
+    .fiche-logement {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .host-rating {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
-    .tags, 
     .description-equipments-container {
         flex-direction: column;
         gap: 10px; 
@@ -125,7 +135,12 @@
 }
 
 @media (max-width: 480px) { 
-    .tags, 
+
+    .fiche-logement {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .description-equipments-container {
         flex-direction: column;
     }

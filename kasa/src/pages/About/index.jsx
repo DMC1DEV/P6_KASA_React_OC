@@ -6,7 +6,7 @@ import ImageBannerAbout from "../../assets/image_banner_about.jpeg";
 
 function About() {
   return (
-    <div className="about-page">
+    <div className="about-page" >
       <Banner image={ImageBannerAbout} />
       
       <div className='collapse-container'>

@@ -5,24 +5,13 @@ body, html {
   padding: 0;
   font-family: $font-family-montserrat;
   min-height: 100vh; 
-  width: 100%;
-  display: flex;
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
 }
 
 /* Styles par défaut */
-#root {
+main, header {
   margin-top: 25px;
-  width: 100%; 
-  max-width: 3200px; 
-  min-height: 100vh; 
   margin-left: 50px;
   margin-right: 50px;
-}
-
-.all-content {
-  width: 100%;
 }
 
 /* Grid appartements pour les écrans larges */
@@ -65,15 +54,27 @@ body, html {
 }
 
 /* Responsive: Tablette */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .apartments-grid {
     grid-template-columns: repeat(2, 1fr); 
+  }
+
+  main, header {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
 /* Responsive: Téléphone portable */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .apartments-grid {
     grid-template-columns: 1fr;
+  }
+
+  main, header {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

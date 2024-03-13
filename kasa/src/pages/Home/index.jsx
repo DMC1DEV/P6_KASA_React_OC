@@ -7,7 +7,8 @@ import ImageBannerHomepage from "../../assets/image_banner_homepage.jpeg";
 
 function Home() {
   return (
-    <div className="all-content">
+    
+    <main className="all-content">
       <Banner image={ImageBannerHomepage}>
         Chez vous, partout et ailleurs
       </Banner>
@@ -22,7 +23,7 @@ function Home() {
           />
         ))}
       </div>
-    </div>
+    </main>
   );
 }
 

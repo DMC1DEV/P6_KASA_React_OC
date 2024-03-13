@@ -37,6 +37,17 @@
   object-position: center;
 }
 
+.image-counter {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; 
+  font-size: 20px; 
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
 /* Pour les écrans plus larges */
 @media (min-width: 1024px) {
   .carousel-image {

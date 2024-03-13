@@ -1,5 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .about-page {
-    width: 100%;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .about-page .banner_container {
