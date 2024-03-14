@@ -35,6 +35,31 @@
     max-height: 1000px;
     transition: max-height 1s ease-in;
   }
+
+  &.content p {
+    margin-left: 20px; 
+    margin-right: 20px; 
+  }
+  
+}
+
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  .collapse-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
 }
 
 @keyframes slideDown {
@@ -57,21 +82,4 @@
   }
 }
 
-.collapse-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-bottom: 50px;
 
-  .collapse-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
-  }
-}

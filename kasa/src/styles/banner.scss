@@ -13,6 +13,7 @@
     margin-bottom: 40px;
     margin-top: 40px;
     z-index: 1;
+    padding: 10px;
 
     &:after {
         content: '';
@@ -38,23 +39,26 @@
 
     // Media query for tablets
     @media screen and (max-width: 767px) {
+        height: 120px;
+
         .banner_text {
-            font-size: 25px;
-            line-height: 48px;
+            font-size: 23px;
+            line-height: 40px;
+            text-align: left;
+            padding: 25px;
         }
     }
 
     // Media query for mobile devices
     @media screen and (max-width: 320px) {
-        height: 180px;
-        margin-left: 20px;
-        margin-right: 20px;
-        border-radius: 15px;
+        height: 100px;
 
         .banner_text {
             font-size: 20px;
             line-height: 32px;
             padding: 1px;
+            text-align: left;
+            padding: 10px;
         }
     }
 }

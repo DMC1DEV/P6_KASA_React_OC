@@ -47,7 +47,7 @@
 
     // Pour les écrans plus petits
     @media (max-width: 768px) {
-      height: 200px;
+      height: 250px;
     }
   }
 
@@ -60,5 +60,9 @@
     font-size: 20px;
     padding: 5px 10px;
     border-radius: 10px;
+
+    @media (max-width: 425px) {
+      display: none;
+    }
   }
 }
