@@ -6,7 +6,7 @@ import ImageBannerAbout from "../../assets/image_banner_about.jpeg";
 
 function About() {
   return (
-    <div className="about-page" >
+    <main className="about-page" >
       <Banner image={ImageBannerAbout} />
       
       <div className='collapse-container'>
@@ -34,7 +34,7 @@ function About() {
         </div>
       </Collapse>
       </div>
-    </div>
+    </main>
   );
 }
 

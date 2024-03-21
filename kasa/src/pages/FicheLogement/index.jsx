@@ -37,7 +37,7 @@ function generateStarIcons(rating) {
 
 
   return (
-    <div className="fiche-logement">
+    <main className="fiche-logement">
       <Carousel pictures={pictures} />
       <div className="content-container">
         <div className="info-container">
@@ -71,7 +71,7 @@ function generateStarIcons(rating) {
           </Collapse>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
