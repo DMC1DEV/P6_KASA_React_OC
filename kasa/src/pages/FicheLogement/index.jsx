@@ -11,6 +11,7 @@ function FicheLogementPage() {
   const { id } = useParams();
   const apartment = apartmentsData.find(apartment => apartment.id === id);
 
+  // Redirection error404
   if (!apartment) {
     return <Navigate to="/404" replace />;
   }
@@ -22,12 +23,12 @@ function generateStarIcons(rating) {
   const fullStarsCount = Math.floor(rating); 
   const emptyStarsCount = 5 - fullStarsCount; 
 
-  // Ajouter les étoiles pleines
+  // Ajoute les étoiles pleines
   for (let i = 0; i < fullStarsCount; i++) {
     stars.push(<FontAwesomeIcon icon={faStar} color="#FFD700" className="custom-size" key={`full-${i}`} />);
   }
 
-  // Ajouter les étoiles vides
+  // Ajoute les étoiles vides
   for (let i = 0; i < emptyStarsCount; i++) {
     stars.push(<FontAwesomeIcon icon={faStar} style={{ color: 'gray' }} className="custom-size" key={`empty-${i}`} />);
   }
