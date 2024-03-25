@@ -1,5 +1,16 @@
 @import '_variables';
 
+// Define variables
+$font-family-montserrat: 'Montserrat', sans-serif;
+$background-color: #F6F6F6;
+$border-radius-large: 25px;
+$border-radius-small: 10px;
+$gap-large: 30px;
+$margin-large: 50px;
+$padding-large: 50px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 320px;
+
 body, html {
   margin: 0;
   padding: 0;
@@ -7,36 +18,63 @@ body, html {
   min-height: 100vh; 
 }
 
-/* Styles par défaut */
 main, header {
   margin-top: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: $margin-large;
+  margin-right: $margin-large;
+
+  // Tablet responsive 
+  @media (max-width: $breakpoint-tablet) {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  // Mobile responsive
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
-/* Grid appartements pour les écrans larges */
+// apartments grid
 .apartments-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 30px;
+  gap: $gap-large;
   justify-content: center;
   align-items: start;
-  background-color: #F6F6F6;
-  padding: 50px;
-  padding-top: 50px;
-  border-radius: 25px;
+  background-color: $background-color;
+  padding: $padding-large;
+  padding-top: $padding-large;
+  border-radius: $border-radius-large;
   max-width: 1600px;
   margin: auto;
+
+  // Tablet responsive 
+  @media (max-width: $breakpoint-tablet) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  // Mobile responsive 
+  @media (max-width: $breakpoint-mobile) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card-container {
   display: flex;
   justify-content: center;
-  flex: start;
+  flex-start: start;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .card {
-  border-radius: 10px;
+  border-radius: $border-radius-small;
   overflow: hidden;
   background-image: url(''); 
   background-size: cover;
@@ -49,34 +87,4 @@ main, header {
   width: 100%;
   max-width: 300px; 
   margin: 0 auto;
-}
-
-.card-container a {
-  text-decoration: none;
-}
-
-/* Responsive: Tablette */
-@media (max-width: 768px) {
-  .apartments-grid {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-
-  main, header {
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-/* Responsive: Téléphone portable */
-@media (max-width: 320px) {
-  .apartments-grid {
-    grid-template-columns: 1fr;
-  }
-
-  main, header {
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 }
